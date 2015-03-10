@@ -8,7 +8,7 @@ namespace PhotoSharingApp {
   public partial class _Default : Page {
     protected void Page_Load(object sender, EventArgs e) {
       // TODO: update this with the URL of the Office 365 site that contains the libraries with photos
-        Uri sharePointSiteUrl = new Uri("https://jcistage.sharepoint.com/sites/dev");
+        Uri sharePointSiteUrl = new Uri("https://jcistage.sharepoint.com");
 
       // if the refresh code is in the URL, cache it
       if (Request.QueryString["code"] != null) {
