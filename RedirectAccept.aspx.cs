@@ -22,6 +22,7 @@ namespace PhotoSharingApp {
                                        rUri)) {
         context.Load(context.Web);
         context.ExecuteQuery();
+        Response.Write(context.Web.Title);
       }
     }
   }
