@@ -11,7 +11,9 @@ namespace PhotoSharingApp {
       string authCode = Request.QueryString["code"];
       // TODO: Update this with the local site's page where the user should be redirected to after logging in
       Uri rUri = new Uri("https://oauthsite.azurewebsites.net/RedirectAccept.aspx");
-      string o365Site = "https://jcistage.sharepoint.com/";
+      //string o365Site = "https://jcistage.sharepoint.com/";
+      string o365Site = "https://apps.jci.com/sites/jvijayra";
+
 
       // validate the auth code & redirect to the requested site
       using (ClientContext context = TokenHelper.GetClientContextWithAuthorizationCode(
